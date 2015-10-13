@@ -1,0 +1,42 @@
+﻿{
+   margin: 0;
+   padding: 0;
+}
+#wrapper {/*子要素が positionを指定する時は親要素にも*/
+   position: relative;           position指定します。*/
+   top: 0;
+   left: 0;       /* top: 0; left: 0; 省略可 */
+   width: 70%;
+   margin: 0 auto;/* 幅 70% でセンタリングします。*/
+}
+#header {
+   width: 100%;
+   height: 50px;
+}
+#main {
+   width: 100%;
+}
+#left {
+   position: absolute;
+   left: 0;/* position 指定の親要素 wrapper が基準になります。*/
+   width: 150px;
+   border-style:solid;
+}
+#center {
+   margin: 0 160px;/* 両端 150px のマージンを設定します。*/
+   border-style:solid;
+}
+#right {
+  	position: absolute;
+  	top: 50px;            
+  	right: 0;/* position 指定の親要素 wrapper が基準になります。*/
+  	width: 150px;
+}
+#footer {
+  	width: 100%;
+  	height: 50px;
+}
+#list1 li{
+		list-style-type:none;
+		list-style-image:none;
+}
